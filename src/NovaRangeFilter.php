@@ -12,7 +12,7 @@ abstract class NovaRangeFilter extends Filter
      *
      * @var string
      */
-    public $component = 'nova-slider-filter';
+    public $component = 'nova-range-filter';
 
     /**
      * Slider min value
