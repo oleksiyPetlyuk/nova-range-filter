@@ -8,6 +8,7 @@
                         :tooltip="getOption('tooltip') || tooltip"
                         :min="getOption('min') || min"
                         :max="getOption('max') || max"
+                        :interval="getOption('interval') || interval"
                         @change="handleChange"/>
         </div>
     </div>
@@ -26,7 +27,8 @@
             return {
                 min: 0,
                 max: 100,
-                tooltip: 'always'
+                tooltip: 'always',
+                interval: 1,
             }
         },
 

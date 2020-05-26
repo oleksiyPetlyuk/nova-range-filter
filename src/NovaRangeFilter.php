@@ -29,6 +29,13 @@ abstract class NovaRangeFilter extends Filter
     public $max = 100;
 
     /**
+     * Slider interval value
+     *
+     * @var int
+     */
+    public $interval = 1;
+
+    /**
      * Slider tooltip behaviour
      *
      * @var string
@@ -58,6 +65,7 @@ abstract class NovaRangeFilter extends Filter
         return [
             'min' => $this->min,
             'max' => $this->max,
+            'interval' => $this->interval,
             'tooltip' => $this->tooltip,
         ];
     }
